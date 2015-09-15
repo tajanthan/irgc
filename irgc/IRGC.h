@@ -20,6 +20,8 @@
 
 	If you use this code for research purposes, you should cite
 	the aforementioned paper in any resulting publication.
+	
+	*Contact: thalaiyasingam.ajanthan@nicta.com.au
 */
 
 #pragma once

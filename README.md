@@ -1,7 +1,7 @@
 # irgc
 Iteratively Reweighted Graph Cut
 
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 This code implements the IRGC and IRGC+expansion algorithms	described in the paper 
 
 	"Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors", 
@@ -22,33 +22,29 @@ This code implements the IRGC and IRGC+expansion algorithms	described in the pap
 
 	If you use this code, you should cite the aforementioned paper 
 	in any resulting publication.
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 Directory "alpha_exapnsion_west" contains the alpha-expansion code downloaded from
 http://vision.csd.uwo.ca/code/gco-v3.0.zip
 
-We made some minor changes in the energy.h file to make it work with our 
-IRGC+expansion algorithm. Therefore we included it with our source code.
----------------------------------------------------------------------------------------
+	We made some minor changes in the energy.h file to make it work with our 
+	IRGC+expansion algorithm. Therefore we included it with our source code.
+-------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 Directory "maxflow" contains the max-flow code downloaded from
 http://vision.csd.uwo.ca/code/maxflow-v3.01.zip
 
-We made some minor changes to reduce the memory requirement of the Ishikawa graph. 
-Therefore we included it with our source code.
----------------------------------------------------------------------------------------
+	We made some minor changes to reduce the memory requirement of the Ishikawa graph. 
+	Therefore we included it with our source code.
+-------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------
-# To assist the user, example.cpp, Makefile and sample data files are provided.
+-------------------------------------------------------------------------------------------
+To assist the user, example.cpp, Makefile and sample data files are provided.
 
-# Example usage 
-irgc.exe 10 10 5 <sample>/toy_unary_10_10_5.txt <sample>/toy_binary_4_10_10.txt TQ 2 1
---> runs IRGC+expansion algorithm on 10x10 image with 5 labels, with 
-	truncated quadratic pairwise potential - truncated at lambda = 2.
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Contact: thalaiyasingam.ajanthan@nicta.com.au
----------------------------------------------------------------------------------------
+	Example usage 
+	irgc.exe 10 10 5 <sample>/toy_unary_10_10_5.txt <sample>/toy_binary_4_10_10.txt TQ 2 1
+		runs IRGC+expansion algorithm on 10x10 image with 5 labels, with 
+		truncated quadratic pairwise potential - truncated at lambda = 2.
+-------------------------------------------------------------------------------------------
