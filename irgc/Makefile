@@ -5,8 +5,8 @@ CPPFLAGS= -DIL_STD -msse4 -O3 -s -ffast-math -funroll-loops -ansi -Wall -DTRWS_D
 
 all: irgc
 
-irgc: *.cpp *.h
-	$(CPP) $(CPPFLAGS) *.cpp -o irgc
+irgc: maxflow/*.cpp maxflow/*.h alpha_exapnsion_west/*.cpp alpha_exapnsion_west/*.h *.cpp *.h
+	$(CPP) $(CPPFLAGS)  maxflow/*.cpp alpha_exapnsion_west/*.cpp *.cpp -o irgc
 
 clean:
 	rm -f irgc

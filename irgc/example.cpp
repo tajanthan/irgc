@@ -22,7 +22,7 @@ static captype *unaryPotentialArray;
 static captype *binaryWeightArray;
 static captype *binaryFunctionArray;
 
-void errorFunction(char* msg)
+void errorFunction(const char* msg)
 {
 	cout << endl << "Error!\n " << msg << endl;
 	exit(1);
@@ -154,7 +154,7 @@ void deleteLocalArrays()
 
 int main(int argc, char **argv)
 {
-	char* usage = " [width] [height] [labels] [unary potential file (V*L)] [binary weights file (E)] \
+	const char* usage = " [width] [height] [labels] [unary potential file (V*L)] [binary weights file (E)] \
 		[binary potential function (TL, TQ, CA)] [lambda (inflection point)] [hybrid] [max-iter]";
 	if (argc < 8) {
 		cout << "Error!" << endl;

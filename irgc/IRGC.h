@@ -76,7 +76,10 @@ public:
 
 	/* Get the label
 		returns the label of the given node */
-	labelid getLabel(nodeid);
+	labelid getLabel(nodeid ii)
+	{
+		return labelling[ii];
+	}
 
 private:
 	nodeid width, height;

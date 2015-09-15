@@ -430,10 +430,4 @@ bool IRGC<nodeid, labelid, captype>::optimize(size_t maxiter)
 	return (iter < maxiter);
 }
 
-template <typename nodeid, typename labelid, typename captype>
-typename labelid IRGC<nodeid, labelid, captype>::getLabel(nodeid ii)
-{
-	return labelling[ii];
-}
-
 #include "irgc_instances.inc"
