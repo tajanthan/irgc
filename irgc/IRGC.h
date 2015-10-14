@@ -22,6 +22,8 @@
 	the aforementioned paper in any resulting publication.
 	
 	*Contact: thalaiyasingam.ajanthan@nicta.com.au
+	
+	TODO: Reuse-Tree code to be utilized to improve runtime!!
 */
 
 #pragma once
