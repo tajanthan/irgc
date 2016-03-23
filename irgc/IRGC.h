@@ -18,12 +18,11 @@
 			|	 |	  |
 			3 -- 4 -- 5
 
-	If you use this code for research purposes, you should cite
-	the aforementioned paper in any resulting publication.
+	If you use this code, please consider citing the aforementioned paper 
+	in any resulting publication.
 	
 	*Contact: thalaiyasingam.ajanthan@nicta.com.au
 	
-	TODO: Reuse-Tree code to be utilized to improve runtime!!
 */
 
 #pragma once

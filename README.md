@@ -20,8 +20,12 @@ This code implements the IRGC and IRGC+expansion algorithms	described in the pap
 			|	 |	  |
 			3 -- 4 -- 5
 
-	If you use this code, you should cite the aforementioned paper 
+	This code is for research purposes only, if you want to use it for commercial purpose 
+	please contact us.
+	If you use this code, please consider citing the aforementioned paper 
 	in any resulting publication.
+	
+	Contact: thalaiyasingam.ajanthan@nicta.com.au
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
