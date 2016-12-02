@@ -25,7 +25,7 @@ This code implements the IRGC and IRGC+expansion algorithms	described in the pap
 	If you use this code, please consider citing the aforementioned paper 
 	in any resulting publication.
 	
-	Contact: thalaiyasingam.ajanthan@nicta.com.au
+	Contact: thalaiyasingam.ajanthan@anu.edu.au
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
