@@ -12,86 +12,34 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">IRGC</h1>
-      <h2 class="project-tagline">Iteratively Reweighted Graph Cut</h2>
-      <a href="https://github.com/tajanthan/irgc" class="btn">View on GitHub</a>
-      <a href="https://github.com/tajanthan/irgc/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/tajanthan/irgc/tarball/master" class="btn">Download .tar.gz</a>
+      <h2 class="project-tagline"><strong>Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors</strong></br>
+          Thalaiyasingam Ajanthan, Richard Hartley, Mathieu Salzmann, and Hongdong Li </h2>
+          <!--<h3 class="project-tagline">Thalaiyasingam Ajanthan, Richard Hartley, Mathieu Salzmann, and Hongdong Li</h3>-->
+      <a href="docs/irgc.pdf" class="btn">pdf</a>
+      <a href="docs/irgc_poster.pdf" class="btn">poster</a>
+      <a href="https://github.com/tajanthan/irgc" class="btn">code</a>
+      <!--<a href="https://github.com/tajanthan/irgc/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/tajanthan/irgc/tarball/master" class="btn">Download .tar.gz</a>-->
     </section>
 
     <section class="main-content">
       <h1>
-<a id="irgc" class="anchor" href="#irgc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>irgc</h1>
+<a id="irgc" class="anchor" href="#irgc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors</h1>
 
-<p>Iteratively Reweighted Graph Cut</p>
-
-<hr>
-
-<p>This code implements the IRGC and IRGC+expansion algorithms described in the paper </p>
-
-<pre><code>"Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors", 
-Thalaiyasingam Ajanthan, Richard Hartley, Mathieu Salzmann and Hongdong Li,
-IEEE Conference on Computer Vision and Pattern Recognition,
-June 2015.
-
-*Code Assumptions:
-    1. The MRF energy has the following form
-        E(x) = \sum \theta_{i}(x_i) + \sum \theta_{ij} (x_i, x_j), 
-        where \theta_{ij} (x_i, x_j) = \gamma_{ij} \theta(|x_i - x_j|).
-    2. The code currently supports MRF with 4-connected grid structure only.
-        nodes labelled from 0 --&gt; width * height - 1, in a grid structure.
-        E.g. width = 3, height = 2
-        0 -- 1 -- 2
-        |    |    |
-        3 -- 4 -- 5
-
-This code is for research purposes only, if you want to use it for commercial purpose 
-please contact us.
-If you use this code, please consider citing the aforementioned paper 
-in any resulting publication.
-
-Contact: thalaiyasingam.ajanthan@nicta.com.au
-</code></pre>
-
-<hr>
-
-<hr>
-
-<p>Directory "alpha_exapnsion_west" contains the alpha-expansion code downloaded from
-<a href="http://vision.csd.uwo.ca/code/gco-v3.0.zip">http://vision.csd.uwo.ca/code/gco-v3.0.zip</a></p>
-
-<pre><code>We made some minor changes in the energy.h file to make it work with our 
-IRGC+expansion algorithm. Therefore we included it with our source code.
-</code></pre>
-
-<hr>
-
-<hr>
-
-<p>Directory "maxflow" contains the max-flow code downloaded from
-<a href="http://vision.csd.uwo.ca/code/maxflow-v3.01.zip">http://vision.csd.uwo.ca/code/maxflow-v3.01.zip</a></p>
-
-<pre><code>We made some minor changes to reduce the memory requirement of the Ishikawa graph. 
-Therefore we included it with our source code.
-</code></pre>
-
-<hr>
-
-<hr>
-
-<p>To assist the user, example.cpp, Makefile and sample data files are provided.</p>
-
-<pre><code>Example usage 
-irgc.exe 10 10 5 &lt;sample&gt;/toy_unary_10_10_5.txt &lt;sample&gt;/toy_binary_4_10_10.txt TQ 2 1
-    runs IRGC+expansion algorithm on 10x10 image with 5 labels, with 
-    truncated quadratic pairwise potential - truncated at lambda = 2.
-</code></pre>
-
-<hr>
+<h2 id="abstract">Abstract</h2>
+<p>While widely acknowledged as highly effective in computer vision, multi-label MRFs with non-convex priors are difficult to optimize. To tackle this, we introduce an algorithm that iteratively approximates the original energy with an appropriately weighted surrogate energy that is easier to minimize. Our algorithm guarantees that the original energy decreases at each iteration. In particular, we consider the scenario where the global minimizer of the weighted surrogate energy can be obtained by a multi-label graph cut algorithm, and show that our algorithm then lets us handle of large variety of non-convex priors. We demonstrate the benefits of our method over state-of-the-art MRF energy minimization techniques on stereo and inpainting problems.</p>
+<h2 id="publication">Publication</h2>
+<p>Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors.</br> 
+Thalaiyasingam Ajanthan, Richard Hartley, Mathieu Salzmann, and Hongdong Li.</br> 
+IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2016.</p>
+<p>[<a href="/docs/irgc.pdf" title="pdf">pdf</a>] 
+[<a href="https://arxiv.org/abs/1411.6340" title="arxiv">arxiv</a>] 
+[<a href="/docs/irgc_poster.pdf" title="poster">poster</a>] 
+[<a href="https://github.com/tajanthan/irgc" title="code">code</a>]</p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/tajanthan/irgc">IRGC</a> is maintained by <a href="https://github.com/tajanthan">tajanthan</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/tajanthan/irgc">IRGC</a> 
+            is maintained by <a href="https://github.com/tajanthan">tajanthan</a>.</span>
       </footer>
 
     </section>
