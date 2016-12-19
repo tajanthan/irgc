@@ -4,7 +4,7 @@
 
 This code implements the IRGC and IRGC+expansion algorithms	described in the following paper  
 
-[Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors](https://github.com/tajanthan/irgc).   
+[Iteratively Reweighted Graph Cut for Multi-label MRFs with Non-convex Priors](https://tajanthan.github.io/irgc).   
 Thalaiyasingam Ajanthan, Richard Hartley, Mathieu Salzmann and Hongdong Li.  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR),	June 2015.
 
