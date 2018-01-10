@@ -7,7 +7,7 @@ template <typename nodeid, typename labelid, typename captype>
 IRGC<nodeid, labelid, captype>::IRGC(nodeid width, nodeid height, labelid labels,
 	bool hybrid, const char* logf)
 	: width(width), height(height), labels(labels), hybrid(hybrid),
-	lambda(0), numnodes(0), numedges(0), iter(0), IG(NULL)
+	lambda(0), numnodes(0), numedges(0), iter(0), IG(NULL), EG(NULL) 
 {
 	if (!logf) {
 		if (hybrid) fout.open("irgc_exp.out");
